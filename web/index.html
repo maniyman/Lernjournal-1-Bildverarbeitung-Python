@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bildanalyse App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="p-4">
+  <div class="container">
+    <h1 class="mb-4">Bildanalyse</h1>
+    
+    <form id="imageForm">
+      <div class="form-group">
+        <label for="imageInput">Bild auswählen:</label>
+        <input type="file" class="form-control-file" id="imageInput" accept="image/*" required>
+      </div>
+      <button type="submit" class="btn btn-primary mt-2">Bild analysieren</button>
+    </form>
+
+    <div class="mt-4" id="result" style="display:none;">
+      <h3>Analyse-Ergebnis</h3>
+      <pre id="output"></pre>
+    </div>
+  </div>
+</body>
+</html>
